@@ -1,0 +1,194 @@
+﻿<div class="header-bottom">
+    <!--header-bottom-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>           
+            </div>
+            <div class="col-sm-3">             
+            </div>
+            </div>
+        </div>
+    </div><!--/header-bottom-->
+
+<!-- Navigation -->
+<nav class="navbar navbar-default w3ls navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header wthree nav_2">
+            <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand agileinfo" href="@Url.Action("Index","Home")"><span><font color="#ff7f00">VietNam</font></span>&nbsp; Traditional</a>
+            <ul class="total" >@*<ul class="w3header-cart">*@
+                                 @*<li class="wthreecartaits"><span class="my-cart-icon"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i><span class="badge badge-notify my-cart-badge"></span></span></li>*@
+                <li class="wthreecartaits"><span class="my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+</ul>
+        </div>
+        <div id="bs-megadropdown-tabs" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown" @(ViewContext.RouteData.Values["action"].ToString().Equals("Men") && ViewContext.RouteData.Values["controller"].ToString().Equals("Product") ? "class=selected" : "")>
+                    <a href="@Url.Action("Men","Product")" class="dropdown-toggle w3-agile hyper" data-toggle="dropdown"><span> MEN </span></a>
+                    <ul class="dropdown-menu aits-w3 multi multi1">
+                        <div class="row">
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-mens-nav-agileits w3layouts-mens-nav-agileits-1">
+                                <ul class="multi-column-dropdown">
+                                    <li class="heading">FEATURED</li>
+                                    <li  @(ViewContext.RouteData.Values["action"].ToString().Equals("Men") && ViewContext.RouteData.Values["controller"].ToString().Equals("Product") ? "class=selected" : "")><a href="@Url.Action("Men","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>New Arrivals</a></li>
+                                    <li><a href="@Url.Action("Men","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Online Only</a></li>
+                                    <li><a href="@Url.Action("Men","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Brands</a></li>
+                                    <li><a href="@Url.Action("Men","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Clearance Sale</a></li>
+                                    <li><a href="@Url.Action("Men","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Discount Store</a></li>
+                                    <li><a href="@Url.Action("Men","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Editor's Pick</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-mens-nav-agileits w3layouts-mens-nav-agileits-2">
+                                <p>TORSO</p>
+                                <a href="@Url.Action("Men","Product")"><img src="/assets/client/images/Men/men-nav-1.jpg" alt=""></a>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-mens-nav-agileits w3layouts-mens-nav-agileits-3">
+                                <p>LEGS</p>
+                                <a href="@Url.Action("Men","Product")"><img src="/assets/client/images/Men/men-nav-2.jpg" alt=""></a>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-mens-nav-agileits w3layouts-mens-nav-agileits-4">
+                                <p>ACCESSORIES</p>
+                                <a href="@Url.Action("Men","Product")"><img src="/assets/client/images/Men/men-nav-3.jpg" alt=""></a>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <p class="promo">Use Promo Code <span>#CFFGTY56</span> and take 30% off the products. <a href="#">Details</a></p>
+                        </div>
+
+                    </ul>
+                </li>       <!--MEN--->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span> WOMEN </span></a>
+                    <ul class="dropdown-menu multi multi2">
+                        <div class="row">
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-womens-nav-agileits w3layouts-womens-nav-agileits-1">
+                                <ul class="multi-column-dropdown">
+                                    <li class="heading">FEATURED</li>
+                                    <li><a href="@Url.Action("Women","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Long Dress</a></li>
+                                    <li><a href="@Url.Action("Women","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Cach Tan</a></li>
+                                    <li><a href="@Url.Action("Women","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Ba Ba</a></li>
+                                    <li><a href="@Url.Action("Women","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Dress</a></li>
+                                    <li><a href="@Url.Action("Women","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Apron</a></li>                                   
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-womens-nav-agileits w3layouts-womens-nav-agileits-2">
+                                <p>Long Dress</p>
+                                <a href="@Url.Action("Women","Product")"><img src="/assets/client/images/Women/AoDai/imgmenu.png" alt=""></a>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-womens-nav-agileits w3layouts-womens-nav-agileits-3">
+                                <p>Ba Ba</p>
+                                <a href="@Url.Action("Women","Product")"><img src="/assets/client/images/Women/baba/bb2.jpg" alt=""></a>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-womens-nav-agileits w3layouts-womens-nav-agileits-4">
+                                <p>Cach Tan</p>
+                                <a href="@Url.Action("Women","Product")"><img src="/assets/client/images/Women/AoDai/Cachtan/imgmenu.png" alt=""></a>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <p class="promo">Use Promo Code <span>#CFFGTY56</span> and take 30% off the products. <a href="#">Details</a></p>
+                        </div>
+
+                    </ul>
+                </li>       <!--WOMEN--->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span> BOYS </span></a>
+                    <ul class="dropdown-menu multi multi3">
+                        <div class="row">
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-1">
+                                <ul class="multi-column-dropdown">
+                                    <li class="heading">FEATURED</li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>New Arrivals</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Online Only</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Brands</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Clearance Sale</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Discount Store</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Editor's Pick</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-2">
+                                <p>Custom Logo</p>
+                                <a href="@Url.Action("Boys","Product")"><img src="/assets/client/images/boy/b5.jpg" alt=""></a>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-3">
+                                <p>T-Shirt</p>
+                                <a href="@Url.Action("Boys","Product")"><img src="/assets/client/images/boy/b6.jpg" alt=""></a>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-4">
+                                <p>ACCESSORIES</p>
+                                <a href="@Url.Action("Boys","Product")"><img src="/assets/client/images/boy/b4.jpg" alt=""></a>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <p class="promo">Use Promo Code <span>#CFFGTY56</span> and take 30% off the products. <a href="#">Details</a></p>
+                        </div>
+                    </ul>
+                </li>       <!--BOYS--->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle hyper" data-toggle="dropdown"><span> GIRLS </span></a>
+                    <ul class="dropdown-menu multi multi3">
+                        <div class="row">
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-1">
+                                <ul class="multi-column-dropdown">
+                                    <li class="heading">FEATURED</li>
+                                    <li><a href="@Url.Action("Girls","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Long Dress</a></li>
+                                    <li><a href="@Url.Action("Girls","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Cach Tan</a></li>
+                                    <li><a href="@Url.Action("Girls","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Ba Ba</a></li>
+                                    <li><a href="@Url.Action("Girls","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Dress</a></li>
+                                    <li><a href="@Url.Action("Girls","Product")"><i class="fa fa-angle-right" aria-hidden="true"></i>Apron</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-2">
+                                <p>Girl</p>
+                                <a href="@Url.Action("Girls","Product")"><img src="/assets/client/images/girl/g1.jpg" alt=""></a>
+                            </div>
+
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-3">
+                                <p>T-Shirt</p>
+                                <a href="@Url.Action("Girls","Product")"><img src="/assets/client/images/girl/g2.jpg" alt=""></a>
+                            </div>
+                            <div class="col-sm-3 w3layouts-nav-agile w3layouts-acc-nav-agileits w3layouts-acc-nav-agileits-4">
+                                <p>ACCESSORIES</p>
+                                <a href="@Url.Action("Girls","Product")"><img src="/assets/client/images/girl/g3.jpg" alt=""></a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <p class="promo">Use Promo Code <span>#CFFGTY56</span> and take 30% off the products. <a href="#">Details</a></p>
+                        </div>
+
+                    </ul>
+                </li>        <!--GIRLs--->                    
+                <li><a href="#">CONTACT</a></li>               
+                <li class="wthreecartaits wthreecartaits2 cart cart box_1">
+                    <form action="#" method="post" class="last">
+                        <input type="hidden" name="cmd" value="_cart" />
+                        <input type="hidden" name="display" value="1" />
+                        <button class="w3view-cart" type="submit" name="submit" value="" style="background-color:white;"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- //Navigation -->

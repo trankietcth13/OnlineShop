@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f4858e5cc67740628493a577b8900bc0" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="OnlineShopModel.Category" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.Customer" Width="1.5" PointX="9.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.Order" Width="1.5" PointX="8.625" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.OrderDetail" Width="1.5" PointX="6.375" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.PaymentType" Width="1.5" PointX="12" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.Product" Width="1.5" PointX="6.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.SubCategory" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.Supplier" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineShopModel.Wishlist" Width="1.5" PointX="4.625" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="OnlineShopModel.FK_SubCategory_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineShopModel.FK_OrderDetails_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineShopModel.FK_Wishlist_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineShopModel.SupplierProduct" />
+        <AssociationConnector Association="OnlineShopModel.SubCategoryProduct" />
+        <AssociationConnector Association="OnlineShopModel.ProductOrderDetail" />
+        <AssociationConnector Association="OnlineShopModel.CategoryProduct" />
+        <AssociationConnector Association="OnlineShopModel.PaymentTypeOrder" />
+        <AssociationConnector Association="OnlineShopModel.CustomerOrder" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
